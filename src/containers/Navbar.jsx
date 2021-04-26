@@ -31,8 +31,7 @@ class Navbar extends Component {
             <span className="is-size-5 has-text-white">Hoki Noki</span>
           </div>
 
-          <a
-            href="#"
+          <span
             role="button"
             className={
               navt
@@ -47,7 +46,7 @@ class Navbar extends Component {
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
-          </a>
+          </span>
         </div>
 
         <div
@@ -61,10 +60,7 @@ class Navbar extends Component {
           </div>
           <div className="navbar-end">
             <div className="navbar-item has-dropdown is-hoverable pr-4">
-              <a
-                className="navbar-link has-text-white is-arrowless is-hidden-touch"
-                href="#"
-              >
+              <span className="navbar-link has-text-white is-arrowless is-hidden-touch">
                 <span className="icon-text pr-2">
                   <span className="icon">
                     <i>
@@ -73,7 +69,7 @@ class Navbar extends Component {
                   </span>
                 </span>
                 <span>Administrator</span>
-              </a>
+              </span>
               <div className="navbar-dropdown">
                 <div className="navbar-item">
                   <a href="/pengaturan">

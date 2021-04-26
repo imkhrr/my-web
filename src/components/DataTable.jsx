@@ -37,16 +37,15 @@ const DataTable = (props) => {
                 alert(`id:${rowData.id}`);
               }
               return (
-                <span>
-                  <a onClick={handleAction}>
-                    <button className="button is-danger is-small is-light">
-                      <i>
-                        <CgTrash className="react-icons-sidebar" />
-                      </i>
-                      <span className="pl-2 is-hidden-touch">Hapus</span>
-                    </button>
-                  </a>
-                </span>
+                <button
+                  className="button is-danger is-small is-light"
+                  onClick={handleAction}
+                >
+                  <i>
+                    <CgTrash className="react-icons-sidebar" />
+                  </i>
+                  <span className="pl-2 is-hidden-touch">Hapus</span>
+                </button>
               );
             }}
           </Cell>

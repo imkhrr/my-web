@@ -7,7 +7,6 @@ import {
   CgMenuGridR,
   CgUserList,
   CgChart,
-  CgSortAz,
 } from "react-icons/cg";
 import Chart from "../components/Chart";
 

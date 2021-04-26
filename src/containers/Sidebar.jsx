@@ -10,8 +10,6 @@ import {
   CgShoppingBag,
   CgShoppingCart,
   CgUserList,
-  CgLogOut,
-  CgStyle,
 } from "react-icons/cg";
 import "../styles/sidebar.css";
 
@@ -137,29 +135,6 @@ class Sidebar extends Component {
               </NavLink>
             </li>
           </ul>
-          {/* <p className="menu-label">Extra</p> */}
-          {/* <ul className="menu-list">
-            <li>
-              <NavLink to="/pengaturan" activeClassName="is-active">
-                <span className="icon-text">
-                  <i className="icon">
-                    <CgStyle className="react-icons-sidebar" />
-                  </i>
-                  <span>Pengaturan</span>
-                </span>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/keluar" activeClassName="is-active">
-                <span className="icon-text">
-                  <i className="icon">
-                    <CgLogOut className="react-icons-sidebar" />
-                  </i>
-                  <span>Keluar</span>
-                </span>
-              </NavLink>
-            </li>
-          </ul> */}
         </div>
       </nav>
     );

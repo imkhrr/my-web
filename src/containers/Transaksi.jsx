@@ -19,6 +19,7 @@ class Transaksi extends Component {
       { id: 3, name: "Tomat", category: "Sayur", count: 8, price: 15000 },
       { id: 4, name: "Apel", category: "Buah", count: 12, price: 12000 },
     ];
+
     const active = this.state.showModal ? "is-active" : "";
     return (
       <div className="content px-4">

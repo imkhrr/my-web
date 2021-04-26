@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import DataTable from "../components/DataTable";
 import { CgAdd } from "react-icons/cg";
-import ItemAddModal from "../components/ItemAddModal";
 
 class Barang extends Component {
   render() {
