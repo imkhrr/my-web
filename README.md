@@ -1,4 +1,4 @@
-Changelog 26/04/2021 :
+###Changelog 26/04/2021 :
 
 1. Tambah Transaksi Modal
 2. Tambah Table Sorting
