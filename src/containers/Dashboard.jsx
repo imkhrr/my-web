@@ -17,11 +17,25 @@ class Dashboard extends Component {
     return (
       <div className="content px-4">
         <div className="pb-4">
-          <div className="pb-2">
-            <span className="is-size-5 pr-4">Dashboard</span>
-            <button className="button is-info is-light is-small is-rounded">
-              <CgSortAz />
-            </button>
+          <div className="pb-4">
+            <div className="field is-grouped">
+              <span className="is-size-5 pr-4">Dashboard</span>
+              <div className="pr-1">
+                <button className="button is-info is-small is-rounded">
+                  <span>Harian</span>
+                </button>
+              </div>
+              <div className="pr-1">
+                <button className="button is-info is-light is-small is-rounded">
+                  <span>Mingguan</span>
+                </button>
+              </div>
+              <div className="pr-1">
+                <button className="button is-info is-light is-small is-rounded">
+                  <span>Bulanan</span>
+                </button>
+              </div>
+            </div>
           </div>
           <div className="columns">
             <div className="column">
@@ -63,11 +77,20 @@ class Dashboard extends Component {
           </div>
         </div>
         <div className="pb-4">
-          <div className="pb-2">
-            <span className="is-size-5 pr-4">Grafik</span>
-            <button className="button is-info is-light is-small is-rounded">
-              <CgSortAz />
-            </button>
+          <div className="pb-4">
+            <div className="field is-grouped">
+              <span className="is-size-5 pr-4">Grafik</span>
+              <div className="pr-1">
+                <button className="button is-info is-small is-rounded">
+                  <span>Bar</span>
+                </button>
+              </div>
+              <div className="pr-1">
+                <button className="button is-info is-light is-small is-rounded">
+                  <span>Garis</span>
+                </button>
+              </div>
+            </div>
           </div>
           <div className="columns">
             <div className="column is-9">

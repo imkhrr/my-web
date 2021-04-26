@@ -137,8 +137,8 @@ class Sidebar extends Component {
               </NavLink>
             </li>
           </ul>
-          <p className="menu-label">Extra</p>
-          <ul className="menu-list">
+          {/* <p className="menu-label">Extra</p> */}
+          {/* <ul className="menu-list">
             <li>
               <NavLink to="/pengaturan" activeClassName="is-active">
                 <span className="icon-text">
@@ -159,7 +159,7 @@ class Sidebar extends Component {
                 </span>
               </NavLink>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </nav>
     );

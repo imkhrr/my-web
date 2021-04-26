@@ -7,8 +7,10 @@ class Pengaturan extends Component {
   }
   render() {
     return (
-      <div>
-        <p>Pengaturan</p>
+      <div className="content px-4">
+        <div className="pb-4">
+          <span className="is-size-5">Pengaturan</span>
+        </div>
       </div>
     );
   }

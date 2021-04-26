@@ -7,6 +7,7 @@ import Pengaturan from "../containers/Pengaturan";
 
 import Navbar from "../containers/Navbar";
 import Sidebar from "../containers/Sidebar";
+import Barang from "../containers/Barang";
 
 class HomePage extends Component {
   constructor(props) {
@@ -24,12 +25,11 @@ class HomePage extends Component {
             </div>
             <div className="column">
               <Switch>
-                <div className="animate__animated animate__fadeIn">
-                  <Route path="/" exact component={Dashboard} />
-                  <Route path="/dashboard" component={Dashboard} />
-                  <Route path="/transaksi" component={Transaksi} />
-                  <Route path="/pengaturan" component={Pengaturan} />
-                </div>
+                <Route path="/" exact component={Dashboard} />
+                <Route path="/dashboard" component={Dashboard} />
+                <Route path="/transaksi" component={Transaksi} />
+                <Route path="/barang" component={Barang} />
+                <Route path="/pengaturan" component={Pengaturan} />
               </Switch>
             </div>
           </div>

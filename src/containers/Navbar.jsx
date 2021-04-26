@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { CgProfile } from "react-icons/cg";
+import { CgProfile, CgLogOut, CgStyle } from "react-icons/cg";
 import Sidebar from "./Sidebar";
 
 class Navbar extends Component {
@@ -74,7 +74,17 @@ class Navbar extends Component {
                 </span>
                 <span>Administrator</span>
               </a>
-              {/* <div className="navbar-dropdown">
+              <div className="navbar-dropdown">
+                <div className="navbar-item">
+                  <a href="/pengaturan">
+                    <span className="icon-text">
+                      <i className="icon">
+                        <CgStyle className="react-icons-sidebar" />
+                      </i>
+                      <span>Pengaturan</span>
+                    </span>
+                  </a>
+                </div>
                 <div className="navbar-item">
                   <a href="/keluar">
                     <span className="icon-text">
@@ -85,7 +95,7 @@ class Navbar extends Component {
                     </span>
                   </a>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
