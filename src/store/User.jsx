@@ -1,12 +1,12 @@
-import { atom } from 'recoil';
+import { atom } from "recoil";
 
 // Store user auth data
 const authenticated = atom({
-    key: 'authenticated',
-    default: {
-        check: false,
-        user: []
-    }
+  key: "authenticated",
+  default: {
+    check: true,
+    user: [],
+  },
 });
 
 export { authenticated };
