@@ -21,7 +21,7 @@ function LoginPage(props) {
       let response = await axios.post("login", data);
       localStorage.setItem("userToken", response.data.token);
       setAuth({ check: true, user: response.data.data });
-      history.push("/");
+      history.push("/dashboard");
     } catch (e) {
       setErrors(e.response.data.errors);
       console.clear();
@@ -43,11 +43,11 @@ function LoginPage(props) {
           )}
           <form className="box" onSubmit={auth}>
             <div className="field pb-2">
-              <label className="label">Login to Dashboard</label>
+              <label className="is-size-5">Login to Dashboard</label>
             </div>
             <div className="field">
-              <label className="">Username</label>
-              <div className="control">
+              <label className="label">Username</label>
+              <div className="control has-icons-right">
                 <input
                   onChange={(e) => setUsername(e.target.value)}
                   className={`input ${errors ? "is-danger" : ""}`}
@@ -62,8 +62,8 @@ function LoginPage(props) {
               </div>
             </div>
             <div className="field">
-              <label className="">Password</label>
-              <div className="control">
+              <label className="label">Password</label>
+              <div className="control has-icons-right">
                 <input
                   onChange={(e) => setPassword(e.target.value)}
                   className={`input ${errors ? "is-danger" : ""}`}
@@ -77,24 +77,7 @@ function LoginPage(props) {
                 )}
               </div>
             </div>
-            <div className="field pt-2 px-1">
-              <nav className="level is-mobile">
-                <div className="level-left">
-                  <div className="level-item">
-                    <label className="checkbox">
-                      <input type="checkbox" />
-                      <span className="pl-2">Remember me</span>
-                    </label>
-                  </div>
-                </div>
-                <div className="level-right">
-                  <div className="level-item">
-                    <a href="/forgot">Forgot Password ?</a>
-                  </div>
-                </div>
-              </nav>
-            </div>
-            <div className="field">
+            <div className="field pt-4">
               <button className="button is-info is-fullwidth">Submit</button>
             </div>
           </form>
