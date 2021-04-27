@@ -1,10 +1,10 @@
 .menu {
-  font-size: 0.9rem;
+  font-size: 0.9rem !important;
 }
 
 .menu-list a.is-active {
-  background-color: #e3f2fd;
-  color: #414141;
+  background-color: #e3f2fd !important;
+  color: #414141 !important;
   border-radius: 5px;
 }
 
