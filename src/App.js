@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import { useSetRecoilState } from 'recoil';
-import Router from './router';
-import { authenticated } from './store/User';
-import Loading from './components/Loading';
+import axios from "axios";
+import { useSetRecoilState } from "recoil";
+import Router from "./router";
+import { authenticated } from "./store/User";
+import Loading from "./components/Loading";
 
 function App(props) {
 
@@ -20,7 +20,7 @@ function App(props) {
                 setMounted(true)
             } catch (error) {
                 setMounted(true);
-                // console.clear();
+                console.clear();
             };
         };
         getUser();

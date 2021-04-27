@@ -4,8 +4,8 @@ import { atom } from 'recoil';
 const authenticated = atom({
     key: 'authenticated',
     default: {
-        check: true,
-        data: []
+        check: false,
+        user: []
     }
 });
 

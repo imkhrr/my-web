@@ -21,31 +21,31 @@ function Router(props) {
                         <Middleware.Authenticated render={<Dashboard />} />
                     </Route>
 
-                    <Route exact path="/dashboard">
+                    <Route path="/dashboard">
                         <Middleware.Authenticated render={<Dashboard />} />
                     </Route>
 
-                    <Route exact path="/transaksi">
+                    <Route path="/transaksi">
                         <Middleware.Authenticated render={<Transaksi />} />
                     </Route>
                     
-                    <Route exact path="/commodity">
+                    <Route path="/commodity">
                         <Middleware.Authenticated render={<Commodity />} />
                     </Route>
 
-                    <Route exact path="/user">
+                    <Route path="/user">
                         <Middleware.Authenticated render={<User />} />
                     </Route>
                     
-                    <Route exact path="/customers">
+                    <Route path="/customers">
                         <Middleware.Authenticated render={<Customer />} />
                     </Route>
 
-                    <Route exact path="/suppliers">
+                    <Route path="/suppliers">
                         <Middleware.Authenticated render={<Suppliers />} />
                     </Route>
 
-                    <Route exact path="/settings">
+                    <Route path="/settings">
                         <Middleware.Authenticated render={<Settings />} />
                     </Route>
 
