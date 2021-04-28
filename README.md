@@ -4,18 +4,17 @@
 28/04/2021
 
 Change :
-Added StatCard TrendUp & Down Icon
+Added StatCard Trend Up & Down Icon
 Added Latest Transaction Page
 Added New Transcation Page
-Added Some Animation on Page
+Added New Checkout Page
+Added Animation on Some Page
 Changed StatCard Icon
 Changed BestSellerCard Icon
 Changed Dashboard Sorting
 Changed Transaction Page
 Disabled Transaction Modal
 
-Bug :
-New Transcation Page Table Size on First Load
 ```
 
 ```bash
