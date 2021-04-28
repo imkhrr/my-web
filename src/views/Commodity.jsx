@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Navbar from "../layouts/Navbar";
 import Sidebar from "../layouts/Sidebar";
-import DataTableTransaksi from "../components/DataTableTransaksi";
 import { CgAdd } from "react-icons/cg";
 
 class Commodity extends Component {
