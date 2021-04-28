@@ -6,13 +6,6 @@ import { CgAdd } from "react-icons/cg";
 
 class Commodity extends Component {
   render() {
-    const itemData = [
-      { id: 1, name: "Nanas", category: "Buah", count: 5, price: 5000 },
-      { id: 2, name: "Semangka", category: "Buah", count: 2, price: 25000 },
-      { id: 3, name: "Tomat", category: "Sayur", count: 8, price: 15000 },
-      { id: 4, name: "Apel", category: "Buah", count: 12, price: 12000 },
-    ];
-
     return (
       <div style={{ maxHeight: "100vh" }}>
         <Navbar />
@@ -31,9 +24,7 @@ class Commodity extends Component {
                   <span>Tambah Data Barang</span>
                 </button>
               </div>
-              <div className="">
-                <DataTableTransaksi listdata={itemData} />
-              </div>
+              <div className=""></div>
             </div>
           </div>
         </div>
