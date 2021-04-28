@@ -8,7 +8,7 @@ function Guest(props) {
   const history = useHistory();
 
   if (auth.check) {
-    history.push("/dashboard");
+    history.push('/');
   }
 
   return props.render;

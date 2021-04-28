@@ -8,16 +8,15 @@ import Loading from "./components/Loading";
 function App(props) {
 
     const setAuth = useSetRecoilState(authenticated);
-    const [mounted, setMounted] = useState(true);
+    const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
+        setMounted(false);
         const getUser = async () => {
-            setMounted(false)
             try {
                 let { data } = await axios.get('me');
                 setAuth({ check: true, user: data.data });
-                console.log(data);
-                setMounted(true)
+                setMounted(true);
             } catch (error) {
                 setMounted(true);
                 console.clear();
@@ -26,15 +25,15 @@ function App(props) {
         getUser();
     }, [setAuth])
 
-    if (!mounted) {
+    if (mounted) {
         return (
             <div>
-                <Loading />
+                <Router />
             </div>
         )
     }
 
-    return <Router />
+    return <Loading />
 }
 
 export default App;

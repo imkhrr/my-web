@@ -1,6 +1,5 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { useHistory } from "react-router";
 import { useSetRecoilState } from "recoil";
 import { authenticated } from "../store/User";
 import FormError from "../components/FormError";
@@ -11,7 +10,6 @@ function LoginPage(props) {
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState("");
 
-  const history = useHistory();
   const data = { username, password };
 
   const auth = async (e) => {
@@ -21,7 +19,6 @@ function LoginPage(props) {
       let response = await axios.post("login", data);
       localStorage.setItem("userToken", response.data.token);
       setAuth({ check: true, user: response.data.data });
-      history.push("/dashboard");
     } catch (e) {
       setErrors(e.response.data.errors);
       console.clear();

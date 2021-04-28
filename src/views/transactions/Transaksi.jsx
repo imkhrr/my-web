@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Navbar from "../layouts/Navbar";
-import Sidebar from "../layouts/Sidebar";
-import TambahTransaksi from "./TambahTransaksi";
-import TransaksiTerakhir from "./TransaksiTerakhir";
-import Checkout from "./Checkout";
+import Navbar from "../../layouts/Navbar";
+import Sidebar from "../../layouts/Sidebar";
+import TambahTransaksi from "../transactions/TambahTransaksi";
+import TransaksiTerakhir from "../transactions/TransaksiTerakhir";
+import Checkout from "../transactions/Checkout";
 import { CgAdd, CgArrowLeft, CgPrinter, CgShoppingCart } from "react-icons/cg";
 
 class Transaksi extends Component {

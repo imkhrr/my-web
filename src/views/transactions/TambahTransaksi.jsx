@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import DataTableBarang from "../components/DataTableBarang";
+import DataTableBarang from "../../components/tables/DataTableBarang";
 import { CgCheck, CgSearch, CgSortAz, CgTrash } from "react-icons/cg";
 
 class TambahTransaksi extends Component {
@@ -39,10 +39,7 @@ class TambahTransaksi extends Component {
       },
     ];
     return (
-      <div
-        className="animate__animated animate__fadeIn animate__fast"
-        style={{ minHeight: "80vh" }}
-      >
+      <div className="animate__animated animate__fadeIn animate__fast" style={{ minHeight: "80vh" }} >
         <div className="columns">
           <div className="column">
             <div className="pb-4 is-flex is-justify-content-space-between">
