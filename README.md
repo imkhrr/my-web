@@ -5,13 +5,14 @@
 
 Change :
 Added StatCard TrendUp & Down Icon
+Added Latest Transaction Page
+Added New Transcation Page
+Added Some Animation on Page
 Changed StatCard Icon
 Changed BestSellerCard Icon
 Changed Dashboard Sorting
 Changed Transaction Page
-Added Latest Transaction Page
-Added New Transcation Page
-Added Page Some Animation
+Disabled Transaction Modal
 
 Bug :
 New Transcation Page Table Size on First Load
