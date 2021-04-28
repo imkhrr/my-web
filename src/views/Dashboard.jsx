@@ -3,13 +3,17 @@ import Navbar from "../layouts/Navbar";
 import Sidebar from "../layouts/Sidebar";
 import StatCard from "../components/StatCard";
 import BestSellerCard from "../components/BestSellerCard";
+import { CgSortAz } from "react-icons/cg";
 import {
-  CgShoppingBag,
-  CgShoppingCart,
-  CgMenuGridR,
-  CgUserList,
-  CgChart,
-} from "react-icons/cg";
+  IoBagCheckOutline,
+  IoBarChartOutline,
+  IoCartOutline,
+  IoCubeOutline,
+  IoPeopleOutline,
+  IoTrendingDownSharp,
+  IoTrendingUpSharp,
+} from "react-icons/io5";
+
 import Chart from "../components/Chart";
 
 class Dashboard extends Component {
@@ -23,26 +27,17 @@ class Dashboard extends Component {
             <Sidebar />
           </div>
           <div className="column">
-            <div className="content px-4">
+            <div className="content pt-2 px-4">
               <div className="pb-4">
                 <div className="pb-4">
                   <div className="field is-grouped">
-                    <span className="is-size-5 pr-4">Dashboard</span>
-                    <div className="pr-1">
-                      <button className="button is-info is-small is-rounded">
-                        <span>Harian</span>
-                      </button>
-                    </div>
-                    <div className="pr-1">
-                      <button className="button is-info is-light is-small is-rounded">
-                        <span>Mingguan</span>
-                      </button>
-                    </div>
-                    <div className="pr-1">
-                      <button className="button is-info is-light is-small is-rounded">
-                        <span>Bulanan</span>
-                      </button>
-                    </div>
+                    <span className="is-size-5 pr-4">Statistik</span>
+                    <button className="button is-info is-small is-light">
+                      <i className="icon">
+                        <CgSortAz className="react-icons-sidebar" />
+                      </i>
+                      <span>Harian</span>
+                    </button>
                   </div>
                 </div>
                 <div className="columns">
@@ -51,14 +46,24 @@ class Dashboard extends Component {
                       <StatCard
                         bgcolor="red"
                         textcolor="white"
-                        icon={<CgShoppingBag className="react-icons-stat" />}
+                        updowncount="50"
+                        updown={
+                          <IoTrendingUpSharp className="react-icons-sidebar" />
+                        }
+                        icon={
+                          <IoBagCheckOutline className="react-icons-stat" />
+                        }
                         statcount="45"
                         statname="Item Terjual"
                       />
                       <StatCard
                         bgcolor="pink"
                         textcolor="white"
-                        icon={<CgUserList className="react-icons-stat" />}
+                        updowncount="40"
+                        updown={
+                          <IoTrendingUpSharp className="react-icons-sidebar" />
+                        }
+                        icon={<IoPeopleOutline className="react-icons-stat" />}
                         statcount="15"
                         statname="Pelanggan"
                       />
@@ -69,14 +74,22 @@ class Dashboard extends Component {
                       <StatCard
                         bgcolor="purple"
                         textcolor="white"
-                        icon={<CgShoppingCart className="react-icons-stat" />}
+                        updowncount="60"
+                        updown={
+                          <IoTrendingDownSharp className="react-icons-sidebar" />
+                        }
+                        icon={<IoCartOutline className="react-icons-stat" />}
                         statcount="18"
                         statname="Transaksi"
                       />
                       <StatCard
                         bgcolor="indigo"
                         textcolor="white"
-                        icon={<CgMenuGridR className="react-icons-stat" />}
+                        updowncount="72"
+                        updown={
+                          <IoTrendingDownSharp className="react-icons-sidebar" />
+                        }
+                        icon={<IoCubeOutline className="react-icons-stat" />}
                         statcount="12"
                         statname="Stok Opname"
                       />
@@ -88,16 +101,12 @@ class Dashboard extends Component {
                 <div className="pb-4">
                   <div className="field is-grouped">
                     <span className="is-size-5 pr-4">Grafik</span>
-                    <div className="pr-1">
-                      <button className="button is-info is-small is-rounded">
-                        <span>Bar</span>
-                      </button>
-                    </div>
-                    <div className="pr-1">
-                      <button className="button is-info is-light is-small is-rounded">
-                        <span>Garis</span>
-                      </button>
-                    </div>
+                    <button className="button is-info is-small is-light">
+                      <i className="icon">
+                        <CgSortAz className="react-icons-sidebar" />
+                      </i>
+                      <span>Bar</span>
+                    </button>
                   </div>
                 </div>
                 <div className="columns">
@@ -109,7 +118,7 @@ class Dashboard extends Component {
                   <BestSellerCard
                     bgcolor="teal"
                     textcolor="white"
-                    icon={<CgChart className="react-icons-stat" />}
+                    icon={<IoBarChartOutline className="react-icons-stat" />}
                     statname="Best Seller"
                   />
                 </div>

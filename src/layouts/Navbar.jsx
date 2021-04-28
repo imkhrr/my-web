@@ -73,14 +73,14 @@ function Navbar(props) {
         <div className="navbar-end">
           <div className="navbar-item has-dropdown is-hoverable pr-4">
             <span className="navbar-link has-text-white is-arrowless is-hidden-touch">
-              <span className="icon-text pr-2">
+              <span> {auth.user.name} </span>
+              <span className="icon-text pl-4">
                 <span className="icon">
                   <i>
                     <CgProfile className="react-icons" />
                   </i>
                 </span>
               </span>
-              <span> {auth.user.name} </span>
             </span>
             <div className="navbar-dropdown">
               <div className="navbar-item">
