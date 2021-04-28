@@ -97,7 +97,7 @@ class Transaksi extends Component {
           <div className="column">
             <div className="content pt-2 px-4">
               <div
-                className={`animate__animated animate__fadeIn ${trans}`}
+                className={`animate__animated animate__fadeIn animate__fast ${trans}`}
                 style={{ minHeight: "80vh" }}
               >
                 <div className="columns">
@@ -133,7 +133,7 @@ class Transaksi extends Component {
               </div>
 
               <div
-                className={`animate__animated animate__fadeIn ${addtrans}`}
+                className={`animate__animated animate__fadeIn animate__fast ${addtrans}`}
                 style={{ minHeight: "80vh" }}
               >
                 <div className="columns">

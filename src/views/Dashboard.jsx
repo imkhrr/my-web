@@ -27,7 +27,7 @@ class Dashboard extends Component {
             <Sidebar />
           </div>
           <div className="column">
-            <div className="content pt-2 px-4">
+            <div className="content pt-2 px-4 animate__animated animate__fadeIn animate__fast">
               <div className="pb-4">
                 <div className="pb-4">
                   <div className="field is-grouped">
