@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import DataTableKeranjang from "../../components/tables/DataTableKeranjang";
+import DataTableKeranjang from "../../components/tables/transactions/DataTableKeranjang";
 
 class Checkout extends Component {
   constructor(props) {

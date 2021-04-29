@@ -89,7 +89,7 @@ function Navbar(props) {
           </div>
         </div>
         <div className="navbar-end">
-          <div className="navbar-item is-hidden-touch">
+          {/* <div className="navbar-item is-hidden-touch">
             <span className="icon-text has-text-white pr-4">
               <span className="icon">
                 <i>
@@ -98,7 +98,7 @@ function Navbar(props) {
               </span>
             </span>
             <span className="has-text-white">{timeNow}</span>
-          </div>
+          </div> */}
           <div className="navbar-item has-dropdown is-hoverable pr-4">
             <span className="navbar-link has-text-white is-arrowless is-hidden-touch">
               <span className="icon-text pr-4">

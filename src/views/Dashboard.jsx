@@ -91,7 +91,7 @@ class Dashboard extends Component {
                         }
                         icon={<IoCubeOutline className="react-icons-stat" />}
                         statcount="12"
-                        statname="Stok Opname"
+                        statname="Restock"
                       />
                     </div>
                   </div>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import DataTableTransaksiTerakhir from "../../components/tables/DataTableTransaksiTerakhir";
+import DataTableTransaksiTerakhir from "../../components/tables/transactions/DataTableTransaksiTerakhir";
 import { CgSearch, CgSortAz } from "react-icons/cg";
 
 class TransaksiTerakhir extends Component {
@@ -41,10 +41,7 @@ class TransaksiTerakhir extends Component {
     ];
 
     return (
-      <div
-        className={`animate__animated animate__fadeIn animate__fast ${trans}`}
-        style={{ minHeight: "80vh" }}
-      >
+      <div className={`animate__animated animate__fadeIn animate__fast ${trans}`} style={{ minHeight: "80vh" }} >
         <div className="columns">
           <div className="column">
             <div className="pb-4 is-flex is-justify-content-space-between">

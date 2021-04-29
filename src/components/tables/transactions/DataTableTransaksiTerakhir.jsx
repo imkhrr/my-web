@@ -43,13 +43,8 @@ const DataTableTransaksiTerakhir = (props) => {
               return (
                 <div className="field is-grouped">
                   <div className="control">
-                    <button
-                      className="button is-info is-small is-light"
-                      onClick={handleAction}
-                    >
-                      <i>
-                        <CgEditBlackPoint className="react-icons-sidebar" />
-                      </i>
+                    <button className="button is-info is-small is-light" onClick={handleAction} >
+                      <i> <CgEditBlackPoint className="react-icons-sidebar" /> </i>
                       <span className="pl-2 is-hidden-touch">Edit</span>
                     </button>
                   </div>

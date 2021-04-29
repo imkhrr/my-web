@@ -18,51 +18,51 @@ class Chart extends Component {
         const data = [
             {
                 name: "Senin",
-                item_terjual: "45",
+                Terjual: "45",
                 pelanggan: "15",
-                transaksi: "18",
+                Transaksi: "18",
                 stok_opname: "12",
             },
             {
                 name: "Selasa",
-                item_terjual: "25",
+                Terjual: "25",
                 pelanggan: "13",
-                transaksi: "10",
+                Transaksi: "10",
                 stok_opname: "15",
             },
             {
                 name: "Rabu",
-                item_terjual: "22",
+                Terjual: "22",
                 pelanggan: "14",
-                transaksi: "12",
+                Transaksi: "12",
                 stok_opname: "2",
             },
             {
                 name: "Kamis",
-                item_terjual: "60",
+                Terjual: "60",
                 pelanggan: "17",
-                transaksi: "29",
+                Transaksi: "29",
                 stok_opname: "21",
             },
             {
                 name: "Jumat",
-                item_terjual: "33",
+                Terjual: "33",
                 pelanggan: "24",
-                transaksi: "10",
+                Transaksi: "10",
                 stok_opname: "11",
             },
             {
                 name: "Sabtu",
-                item_terjual: "42",
+                Terjual: "42",
                 pelanggan: "11",
-                transaksi: "22",
+                Transaksi: "22",
                 stok_opname: "19",
             },
             {
                 name: "Minggu",
-                item_terjual: "29",
+                Terjual: "29",
                 pelanggan: "20",
-                transaksi: "35",
+                Transaksi: "35",
                 stok_opname: "8",
             },
         ];
@@ -78,10 +78,8 @@ class Chart extends Component {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="item_terjual" fill="#f44336" />
-                <Bar dataKey="pelanggan" fill="#e91e63" />
-                <Bar dataKey="transaksi" fill="#9c27b0" />
-                <Bar dataKey="stok_opname" fill="#3f51b5" />
+                <Bar dataKey="Terjual" fill="#f44336" />
+                <Bar dataKey="Transaksi" fill="#9c27b0" />
             </BarChart>
         );
     }

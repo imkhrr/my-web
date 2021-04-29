@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import DataTableTambahTransaksi from "../../components/tables/DataTableTambahTransaksi";
+import DataTableTambahTransaksi from "../../components/tables/transactions/DataTableTambahTransaksi";
 import { CgCheck, CgSearch, CgSortAz, CgTrash } from "react-icons/cg";
 
 class TambahTransaksi extends Component {
