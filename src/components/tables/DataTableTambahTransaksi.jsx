@@ -1,25 +1,21 @@
 import React from "react";
 import { Table, Column, HeaderCell, Cell } from "rsuite-table";
 import "rsuite-table/dist/css/rsuite-table.css";
-import { CgTrash } from "react-icons/cg";
+import { CgAdd } from "react-icons/cg";
 
-const DataTableBarang = (props) => {
+const DataTableTambahTransaksi = (props) => {
   return (
     <div>
       <Table data={props.listdata} autoHeight>
         <Column width={60} align="center">
           <HeaderCell>No.</HeaderCell>
-          <Cell>
-            {(rowData, rowIndex) => {
-              return rowIndex + 1;
-            }}
-          </Cell>
+          <Cell dataKey="id" />
         </Column>
-        <Column flexGrow={1.5}>
+        <Column flexGrow={2}>
           <HeaderCell>Nama Barang</HeaderCell>
           <Cell dataKey="name" />
         </Column>
-        <Column flexGrow={0.8} align="left">
+        <Column flexGrow={1}>
           <HeaderCell>Kategori</HeaderCell>
           <Cell dataKey="category" />
         </Column>
@@ -27,7 +23,7 @@ const DataTableBarang = (props) => {
           <HeaderCell>Harga</HeaderCell>
           <Cell dataKey="price" />
         </Column>
-        <Column flexGrow={0.5} align="center">
+        <Column flexGrow={0.8} align="center">
           <HeaderCell>Stok</HeaderCell>
           <Cell dataKey="stock" />
         </Column>
@@ -40,13 +36,13 @@ const DataTableBarang = (props) => {
               }
               return (
                 <button
-                  className="button is-danger is-small is-light"
+                  className="button is-info is-small is-light"
                   onClick={handleAction}
                 >
                   <i>
-                    <CgTrash className="react-icons-sidebar" />
+                    <CgAdd className="react-icons-sidebar" />
                   </i>
-                  <span className="pl-2 is-hidden-touch">Hapus</span>
+                  <span className="pl-2 is-hidden-touch">Tambah</span>
                 </button>
               );
             }}
@@ -57,4 +53,4 @@ const DataTableBarang = (props) => {
   );
 };
 
-export default DataTableBarang;
+export default DataTableTambahTransaksi;

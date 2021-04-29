@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import DataTableTransaksi from "../../components/tables/DataTableTransaksi";
+import DataTableTransaksiTerakhir from "../../components/tables/DataTableTransaksiTerakhir";
 import { CgSearch, CgSortAz } from "react-icons/cg";
 
 class TransaksiTerakhir extends Component {
@@ -39,6 +39,7 @@ class TransaksiTerakhir extends Component {
         money: "+ 12.000",
       },
     ];
+
     return (
       <div
         className={`animate__animated animate__fadeIn animate__fast ${trans}`}
@@ -66,12 +67,12 @@ class TransaksiTerakhir extends Component {
                     <i className="icon">
                       <CgSortAz className="react-icons-sidebar" />
                     </i>
-                    <span>Urutkan</span>
+                    <span>Filter</span>
                   </button>
                 </div>
               </div>
             </div>
-            <DataTableTransaksi listdata={transData} />
+            <DataTableTransaksiTerakhir listdata={transData} />
           </div>
         </div>
       </div>

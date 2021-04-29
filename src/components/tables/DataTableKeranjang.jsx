@@ -3,7 +3,7 @@ import { Table, Column, HeaderCell, Cell } from "rsuite-table";
 import "rsuite-table/dist/css/rsuite-table.css";
 import { CgTrash } from "react-icons/cg";
 
-const DataTableBarang = (props) => {
+const DataTableKeranjang = (props) => {
   return (
     <div>
       <Table data={props.listdata} autoHeight>
@@ -19,17 +19,17 @@ const DataTableBarang = (props) => {
           <HeaderCell>Nama Barang</HeaderCell>
           <Cell dataKey="name" />
         </Column>
-        <Column flexGrow={0.8} align="left">
-          <HeaderCell>Kategori</HeaderCell>
-          <Cell dataKey="category" />
+        <Column flexGrow={0.8} align="center">
+          <HeaderCell>Jumlah</HeaderCell>
+          <Cell dataKey="count" />
         </Column>
         <Column flexGrow={0.8} align="right">
           <HeaderCell>Harga</HeaderCell>
           <Cell dataKey="price" />
         </Column>
-        <Column flexGrow={0.5} align="center">
-          <HeaderCell>Stok</HeaderCell>
-          <Cell dataKey="stock" />
+        <Column flexGrow={0.8} align="right">
+          <HeaderCell>SubTotal</HeaderCell>
+          <Cell dataKey="subtotal" />
         </Column>
         <Column flexGrow={1}>
           <HeaderCell>Action</HeaderCell>
@@ -57,4 +57,4 @@ const DataTableBarang = (props) => {
   );
 };
 
-export default DataTableBarang;
+export default DataTableKeranjang;

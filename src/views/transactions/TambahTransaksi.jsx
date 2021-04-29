@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import DataTableBarang from "../../components/tables/DataTableBarang";
+import DataTableTambahTransaksi from "../../components/tables/DataTableTambahTransaksi";
 import { CgCheck, CgSearch, CgSortAz, CgTrash } from "react-icons/cg";
 
 class TambahTransaksi extends Component {
@@ -8,7 +8,7 @@ class TambahTransaksi extends Component {
     this.state = {};
   }
   render() {
-    const itemsData = [
+    const addData = [
       {
         id: 1,
         name: "Nanas",
@@ -18,28 +18,17 @@ class TambahTransaksi extends Component {
       },
       {
         id: 2,
-        name: "Semangka",
-        category: "Buah",
-        stock: "5",
-        price: "15.000",
-      },
-      {
-        id: 3,
-        name: "Tomat",
-        category: "Buah",
-        stock: "23",
-        price: "3.000",
-      },
-      {
-        id: 4,
         name: "Anggur Merah",
-        category: "Buah",
-        stock: "8",
-        price: "25.000",
+        category: "Minuman",
+        stock: "999",
+        price: "75.000",
       },
     ];
     return (
-      <div className="animate__animated animate__fadeIn animate__fast" style={{ minHeight: "80vh" }} >
+      <div
+        className="animate__animated animate__fadeIn animate__fast"
+        style={{ minHeight: "80vh" }}
+      >
         <div className="columns">
           <div className="column">
             <div className="pb-4 is-flex is-justify-content-space-between">
@@ -68,13 +57,13 @@ class TambahTransaksi extends Component {
               </div>
             </div>
             <div className="">
-              <DataTableBarang listdata={itemsData} />
+              <DataTableTambahTransaksi listdata={addData} />
             </div>
           </div>
           <div className="column is-4">
             <div className="pb-4 is-flex is-justify-content-space-between">
               <div>
-                <span className="is-size-5 pr-4">Keranjang</span>
+                <span className="is-size-5 pr-2">Keranjang</span>
                 <span className="tag is-info is-rounded">2</span>
               </div>
 
@@ -144,7 +133,7 @@ class TambahTransaksi extends Component {
               </div>
             </div>
             <div className="pb-4 is-flex is-justify-content-space-between is-align-items-center">
-              <span>Total Bayar</span>
+              <span>Total</span>
               <span className="label has-text-info">Rp. 100.000</span>
             </div>
           </div>
