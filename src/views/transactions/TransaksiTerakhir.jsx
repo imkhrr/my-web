@@ -12,28 +12,28 @@ class TransaksiTerakhir extends Component {
     const transData = [
       {
         id: 1,
-        list: "Nanas",
+        list: "KD0978",
         buyer: "Angga",
         date: "08:46 24/04/2021",
         money: "+ 5.000",
       },
       {
         id: 2,
-        list: "Semangka",
+        list: "KO1278",
         buyer: "Pak Dimas",
         date: "12:25 23/04/2021",
         money: "+ 25.000",
       },
       {
         id: 3,
-        list: "Tomat",
+        list: "KT0978",
         buyer: "Diana",
         date: "09:12 22/04/2021",
         money: "+ 15.000",
       },
       {
         id: 4,
-        list: "Apel",
+        list: "KT6574",
         buyer: "Putri",
         date: "15:32 21/04/2021",
         money: "+ 12.000",

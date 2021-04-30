@@ -16,7 +16,7 @@ const DataTableTransaksiTerakhir = (props) => {
           </Cell>
         </Column>
         <Column flexGrow={1.5} sortable>
-          <HeaderCell>Nama Barang</HeaderCell>
+          <HeaderCell>Kode Transaksi</HeaderCell>
           <Cell dataKey="list" />
         </Column>
 
@@ -28,12 +28,8 @@ const DataTableTransaksiTerakhir = (props) => {
           <HeaderCell>Waktu Pembelian</HeaderCell>
           <Cell dataKey="date" />
         </Column>
-        <Column flexGrow={0.8} align="center" sortable>
-          <HeaderCell>Keuangan</HeaderCell>
-          <Cell dataKey="money" />
-        </Column>
         <Column flexGrow={1}>
-          <HeaderCell>Action</HeaderCell>
+          <HeaderCell align="center">Action</HeaderCell>
 
           <Cell>
             {(rowData) => {
@@ -45,7 +41,7 @@ const DataTableTransaksiTerakhir = (props) => {
                   <div className="control">
                     <button className="button is-info is-small is-light" onClick={handleAction} >
                       <i> <CgEditBlackPoint className="react-icons-sidebar" /> </i>
-                      <span className="pl-2 is-hidden-touch">Edit</span>
+                      <span className="pl-2 is-hidden-touch">Rincian</span>
                     </button>
                   </div>
                   <div className="control">
