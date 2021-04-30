@@ -20,12 +20,12 @@ const DataTableCustomers = (props) => {
                     <Cell dataKey="name" />
                 </Column>
                 <Column flexGrow={0.8} >
-                    <HeaderCell>Username</HeaderCell>
-                    <Cell dataKey="category" />
+                    <HeaderCell>Alamat</HeaderCell>
+                    <Cell dataKey="address" />
                 </Column>
                 <Column flexGrow={0.8} >
-                    <HeaderCell>Alamat</HeaderCell>
-                    <Cell dataKey="price" />
+                    <HeaderCell>Kontak</HeaderCell>
+                    <Cell dataKey="contact" />
                 </Column>
                 <Column flexGrow={1}>
                     <HeaderCell>Action</HeaderCell>

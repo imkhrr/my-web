@@ -10,18 +10,28 @@ class Users extends Component {
         const usersData = [
             {
                 id: 1,
-                name: "Nanas",
-                category: "Buah",
-                price: "5.000",
-                stock: "15",
+                name: "Mark Zuckerberg",
+                username: "mark",
+                address: "Jl Jeruk pare kediri"
             },
             {
-                id: 2,
-                name: "Anggur Merah",
-                category: "Minuman",
-                price: "75.000",
-                stock: "999",
+                id: 1,
+                name: "Mohammad Amirul Huda",
+                username: "amirul",
+                address: "Jl semangka pare kediri"
             },
+            {
+                id: 1,
+                name: "Nokie Pratama",
+                username: "nokie",
+                address: "Jl belewah pare kediri"
+            },
+            {
+                id: 1,
+                name: "Via trimey",
+                username: "via",
+                address: "Jl nanas pare kediri"
+            }
         ];
 
         return (

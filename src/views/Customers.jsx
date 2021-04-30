@@ -9,18 +9,22 @@ class Customers extends Component {
         const customersData = [
             {
                 id: 1,
-                name: "Nanas",
-                category: "Buah",
-                price: "5.000",
-                stock: "15",
+                name: "Harjendra Nugraha",
+                address: "Jl. merpati",
+                contact: "085607903567"
             },
             {
-                id: 2,
-                name: "Anggur Merah",
-                category: "Minuman",
-                price: "75.000",
-                stock: "999",
+                id: 1,
+                name: "Galih Buana Aji",
+                address: "Jl. melati",
+                contact: "085604503577"
             },
+            {
+                id: 1,
+                name: "Yordan Wili",
+                address: "Jl. merak",
+                contact: "085607912347"
+            }
         ];
         return (
             <div style={{ maxHeight: "100vh" }}>

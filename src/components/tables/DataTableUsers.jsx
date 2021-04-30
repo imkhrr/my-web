@@ -21,11 +21,11 @@ const DataTableUsers = (props) => {
                 </Column>
                 <Column flexGrow={0.8} >
                     <HeaderCell>Username</HeaderCell>
-                    <Cell dataKey="category" />
+                    <Cell dataKey="username" />
                 </Column>
                 <Column flexGrow={0.8} >
                     <HeaderCell>Alamat</HeaderCell>
-                    <Cell dataKey="price" />
+                    <Cell dataKey="address" />
                 </Column>
                 <Column flexGrow={1}>
                     <HeaderCell>Action</HeaderCell>

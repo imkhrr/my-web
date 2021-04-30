@@ -10,17 +10,27 @@ class Suppliers extends Component {
         const suppliersData = [
             {
                 id: 1,
-                name: "Nanas",
-                category: "Buah",
-                price: "5.000",
-                stock: "15",
+                name: "Wildan Affandi",
+                items: "Tomat, Selada, Bawang",
+                address: "Jl. Bintang"
             },
             {
-                id: 2,
-                name: "Anggur Merah",
-                category: "Minuman",
-                price: "75.000",
-                stock: "999",
+                id: 1,
+                name: "Putra Buah",
+                items: "Apel, Jeruk, Semangka",
+                address: "Jl. Jupiter"
+            },
+            {
+                id: 1,
+                name: "PT. Indofood",
+                items: "Bumbu jadi",
+                address: "Jl. Surya Kencana"
+            },
+            {
+                id: 1,
+                name: "PT. Kapal Api",
+                items: "Kopi Sachet",
+                address: "Jl. Apel"
             },
         ];
         return (
